@@ -8,7 +8,9 @@ COPY requirements.txt .
 RUN pip3 install wheel
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 WORKDIR /app
+COPY hold.py
 COPY . .
+
 EXPOSE 5000
 
-CMD flask run -h 0.0.0.0 -p 5000 & python3 -m devgagan
+CMD flask run -h 0.0.0.0 -p 5000 & python3 -m devgagan && python3 hold.py
