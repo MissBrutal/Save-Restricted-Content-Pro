@@ -250,7 +250,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**Bot By: @MisterBrutal**"
+    f"**Bot By: @MrBrutal_Bots**"
         )
 
         last_update_time = current_time
