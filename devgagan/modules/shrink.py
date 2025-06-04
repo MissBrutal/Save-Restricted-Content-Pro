@@ -69,12 +69,12 @@ async def token_handler(client, message):
     join = await subscribe(client, message)
     if join == 1:
         return
-    chat_id = "MisterBrutal"
+    chat_id = "MrBrutal_Bots"
     msg = await app.get_messages(chat_id, 42 )
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://envs.sh/Fgv.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/MisterBrutal")
+        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/MrBrutal_Bots")
         premium = InlineKeyboardButton("Get Premium", url="https://t.me/Ig_1Venom")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
